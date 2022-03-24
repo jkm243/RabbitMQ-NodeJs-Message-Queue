@@ -1,4 +1,4 @@
-# RabbitMQ Tutorials
+# RabbitMQ-NodeJs-Message-Queue
 
 This project contains code for [RabbitMQ tutorials](https://www.rabbitmq.com/getstarted.html) with
 their ports to various languages.
@@ -25,9 +25,48 @@ more about various [installation options](https://www.rabbitmq.com/download.html
 
 The following ports are available:
 
- * [JavaScript (with Node and amqp-node)](./javascript-nodejs) (using callbacks)
+ * [JavaScript (with Node and amqp-node)](https://github.com/rabbitmq/rabbitmq-tutorials/tree/master/javascript-nodejs) (using callbacks)
  * [JavaScript (with Node and amqp-node)](https://github.com/squaremo/amqp.node/tree/master/examples) (using promises/futures)
- 
+
+# Node.js code for RabbitMQ tutorials
+
+Here you can find JavaScript (Node) code examples from [RabbitMQ
+tutorials](https://www.rabbitmq.com/getstarted.html).
+
+To successfully use the examples you will need a running RabbitMQ server.
+
+## Requirements
+
+### Node.js
+
+You need [Node.js](https://nodejs.org/en/download/) and [amqp.node](https://github.com/squaremo/amqp.node)
+to run these tutorials.
+
+
+### Client Library
+
+To install `amqp.node` using npm:
+
+``` shell
+npm install amqplib -g
+```
+
+## Code
+
+[Tutorial one: "Hello World!"](https://www.rabbitmq.com/tutorials/tutorial-one-javascript.html):
+
+``` shell
+node src/send.js
+node src/receive.js
+```
+
+[Tutorial two: RPC](https://www.rabbitmq.com/tutorials/tutorial-six-javascript.html):
+
+``` shell
+node src/server.js
+node src/client.js 30
+```
+
 ## License
 
 Released under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0.txt).
